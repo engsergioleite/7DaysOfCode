@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERGUNTAS</title>
+</head>
+<h1>Programa de Perguntas e Respostas</h1>
+<body>
+<section>
+    <p><input type="text" name="Qual o seu nome?" id="nome"></p>
+    <p><input type="text" name="Qual a sua idade?" id="idade"></p>
+    <p><input type="text" name="Qual linguagem de programação você esta estudando?" id="linguagem"></p>
+    <input type="button" value="Gerar texto" onclick="texto()">
+</section>
+
+    <div id="resp">O texto completo é:</div>
+<script>
+function texto(){
+    let nome = document.getElementById('nome').value
+    let idade = document.getElementById('idade').value
+    let linguagem = document.getElementById('linguagem').value
+    let res = document.getElementById('resp')
+    resp.innerHTML = `Olá ${nome}, você tem ${idade} anos e já está aprendendo ${linguagem}!`
+  }
+</script>
+        
+    </body>
+</html>

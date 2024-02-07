@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "color": "^4.2.3",
+    "readline-sync": "^1.4.10"
+  }
+}
